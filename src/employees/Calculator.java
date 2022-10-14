@@ -48,4 +48,6 @@ public class Calculator {
         }
         return employe + " равна " + maxSalary;
     }
+
+
 }

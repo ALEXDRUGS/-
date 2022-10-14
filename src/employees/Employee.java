@@ -1,26 +1,12 @@
 package employees;
 
 public class Employee {
-    String surname;
-    String name;
-    String patronymic;
     String fullName;
     double salary;
     int dep;
 
     private static int counter = 1;
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getPatronymic() {
-        return patronymic;
-    }
 
     public String getFullName() {
         return fullName;
@@ -40,28 +26,41 @@ public class Employee {
         return id;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
 
     public void setDep(int dep) {
         this.dep = dep;
     }
 
-    public Employee(int dep, String surname, String name, String patronymic,
-                    double salary) {
-        this.surname = surname;
-        this.name = name;
-        this.patronymic = patronymic;
-        this.fullName = surname + " " + name + " " + patronymic;
+    Employee(int dep, String fullName,
+             double salary) {
+        this.fullName = fullName;
         this.salary = salary;
         this.dep = dep;
         this.id = counter++;
     }
 
-    @Override
-    public String toString() {
-        return "отдел: " + dep + ", Ф.И.О.: " + surname + " " + name + " " + patronymic
-                + ", зарплата: " + salary + ", id: " + id + "\n";
+    public static void allData(Employee[] employees) {
+        String fullName;
+        int dep;
+        double sal;
+        int id;
+        for (Employee employee : employees) {
+            if (employee != null) {
+                fullName = employee.getFullName();
+                dep = employee.getDep();
+                sal = employee.getSalary();
+                id = employee.getId();
+                System.out.println(dep + "й отдел, id: " + id + " фио: " + fullName + " зарплата: " + sal + " рублей");
+            }
+        }
+    }
+    public static void fullName(Employee[] employees) {
+        String fullName;
+        for (Employee employee : employees) {
+            if (employee != null) {
+                fullName = employee.getFullName();
+                System.out.println(fullName);
+            }
+        }
     }
 }
