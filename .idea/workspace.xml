@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b552764c-ec37-404f-9b5b-52f7f0c6f4ad" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/employees/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/employees/Calculator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/employees/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/employees/Main.java" afterDir="false" />
     </list>
@@ -56,7 +56,8 @@
       <workItem from="1664797097519" duration="17289000" />
       <workItem from="1664972898197" duration="14108000" />
       <workItem from="1665048994318" duration="45638000" />
-      <workItem from="1665225868136" duration="14821000" />
+      <workItem from="1665225868136" duration="15317000" />
+      <workItem from="1665848673320" duration="14060000" />
     </task>
     <task id="LOCAL-00001" summary="source">
       <created>1664797621436</created>
@@ -79,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665228421309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="курсовая">
+      <created>1665757602261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757602261</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
