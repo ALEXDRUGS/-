@@ -1,15 +1,12 @@
 package employees;
 
 public class Employee {
-    private String fullName;
+    private final String fullName;
     private double salary;
     private int dep;
 
     private static int counter = 1;
     private int id;
-
-    public Employee() {
-    }
 
     public String getFullName() {
         return fullName;
@@ -32,6 +29,9 @@ public class Employee {
         this.dep = dep;
     }
 
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
     Employee(int dep, String fullName,
              double salary) {
         this.fullName = fullName;

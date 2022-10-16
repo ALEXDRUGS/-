@@ -3,31 +3,31 @@ package employees;
 import java.util.Arrays;
 
 public class Main {
-    private static final Employee[] employee = new Employee[10];
+    private static final Employee[] EMPLOYEE = new Employee[10];
 
     public static void main(String[] args) {
 
 
-        employee[0] = new
+        EMPLOYEE[0] = new
 
                 Employee(1, "Cavalera Massimiliano Antonio", 15_000);
 
-        employee[1] = new
+        EMPLOYEE[1] = new
 
                 Employee(2, "Welgemoed Shaun Morgan", 10_000);
 
-        employee[2] = new
+        EMPLOYEE[2] = new
 
                 Employee(3, "Ritchie John Simon", 12_000);
 
-        employee[3] = new
+        EMPLOYEE[3] = new
 
                 Employee(4, "Maynard James Keenan", 8_000);
 
-        employee[4] = new
+        EMPLOYEE[4] = new
 
                 Employee(5, "Cobain Kurt Donald", 23_000);
-        System.out.println(Arrays.toString(employee));
+        data();
         sumSalary();
         averageSalary();
         minSalary();
@@ -35,23 +35,23 @@ public class Main {
         empFullName();
     }
 
-    public static void sumSalary() {
+    private static void sumSalary() {
         double sum = 0;
-        for (int i = 0; i < employee.length; i++) {
-            if (employee[i] != null) {
-                sum += employee[i].getSalary();
+        for (int i = 0; i < EMPLOYEE.length; i++) {
+            if (EMPLOYEE[i] != null) {
+                sum += EMPLOYEE[i].getSalary();
             }
         }
         System.out.println(sum);
     }
 
-    public static void averageSalary() {
+    private static void averageSalary() {
         double average;
         double sum = 0;
         int count = 0;
-        for (int i = 0; i < employee.length; i++) {
-            if (employee[i] != null) {
-                sum += employee[i].getSalary();
+        for (int i = 0; i < EMPLOYEE.length; i++) {
+            if (EMPLOYEE[i] != null) {
+                sum += EMPLOYEE[i].getSalary();
                 count++;
             }
         }
@@ -59,36 +59,40 @@ public class Main {
         System.out.println(average);
     }
 
-    public static void minSalary() {
+    private static void minSalary() {
         double minSalary = Double.MAX_VALUE;
         String min = null;
-        for (int i = 0; i < employee.length; i++) {
-            if (employee[i] != null && minSalary > employee[i].getSalary()) {
-                minSalary = employee[i].getSalary();
-                min = employee[i].getFullName();
+        for (int i = 0; i < EMPLOYEE.length; i++) {
+            if (EMPLOYEE[i] != null && minSalary > EMPLOYEE[i].getSalary()) {
+                minSalary = EMPLOYEE[i].getSalary();
+                min = EMPLOYEE[i].getFullName();
             }
         }
         System.out.println(min + minSalary);
     }
 
-    public static void maxSalary() {
+    private static void maxSalary() {
         double maxSalary = Double.MIN_VALUE;
         String employe = null;
-        for (int i = 0; i < employee.length; i++) {
-            if (employee[i] != null && maxSalary < employee[i].getSalary()) {
-                maxSalary = employee[i].getSalary();
-                employe = employee[i].getFullName();
+        for (int i = 0; i < EMPLOYEE.length; i++) {
+            if (EMPLOYEE[i] != null && maxSalary < EMPLOYEE[i].getSalary()) {
+                maxSalary = EMPLOYEE[i].getSalary();
+                employe = EMPLOYEE[i].getFullName();
             }
         }
         System.out.println(employe + maxSalary);
     }
 
-    public static void empFullName() {
-        for (int i = 0; i < employee.length; i++) {
-            if (employee[i] != null) {
-                System.out.println(employee[i].getFullName());
+    private static void empFullName() {
+        for (int i = 0; i < EMPLOYEE.length; i++) {
+            if (EMPLOYEE[i] != null) {
+                System.out.println(EMPLOYEE[i].getFullName());
             }
         }
+    }
+
+    private static void data() {
+        System.out.println(Arrays.toString(EMPLOYEE));
     }
 }
 
