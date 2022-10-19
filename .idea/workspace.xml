@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="201ea542-99d7-4d81-9859-b298f45a5b65" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666000718808</updated>
       <workItem from="1666000825420" duration="5145000" />
-      <workItem from="1666084376838" duration="430000" />
+      <workItem from="1666084376838" duration="1295000" />
+      <workItem from="1666167231335" duration="13550000" />
     </task>
     <task id="LOCAL-00001" summary="MyTarget">
       <created>1666003424907</created>
@@ -51,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666003424908</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MyTargetRefactor">
+      <created>1666085241319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666085241319</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,6 +68,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MyTarget" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyTarget" />
+    <MESSAGE value="MyTargetRefactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyTargetRefactor" />
   </component>
 </project>
